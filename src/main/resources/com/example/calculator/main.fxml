@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="235.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculator.MainController">
+   <children>
+      <Label fx:id="Screen" alignment="CENTER_RIGHT" contentDisplay="TOP" maxWidth="235.0" prefHeight="52.0" prefWidth="235.0" style="-fx-background-color: #333;" text="0" textFill="#e43131">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </Label>
+      <GridPane layoutY="44.0" prefHeight="257.0" prefWidth="235.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button alignment="CENTER" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" onAction="#addNumber" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #333; -fx-background-color: #615a50;" styleClass="btnActive" stylesheets="@Styles/Styles.css" text="1" textFill="#fafafa" GridPane.rowIndex="3" />
+            <Button fx:id="plus_minus_btn" alignment="CENTER" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #333; -fx-background-color: #615a50;" styleClass="btnActive" stylesheets="@Styles/Styles.css" text="+/-" textFill="#fafafa" GridPane.columnIndex="1" />
+            <Button fx:id="minus_btn" alignment="CENTER" layoutX="69.0" layoutY="20.0" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #333; -fx-background-color: #eb950e;" styleClass="btnActive" stylesheets="@Styles/Styles.css" text="-" textFill="#fafafa" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="percent_btn" alignment="CENTER" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #333; -fx-background-color: #615a50;" styleClass="btnActive" stylesheets="@Styles/Styles.css" text="\%" textFill="#fafafa" GridPane.columnIndex="2" />
+            <Button alignment="CENTER" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" onAction="#addNumber" prefHeight="58.0" prefWidth="59.0" style="-fx-border-color: #333; -fx-background-color: #615a50;" styleClass="btnActive" stylesheets="@Styles/Styles.css" text="7" textFill="#fafafa" GridPane.rowIndex="1" />
+            <Button alignment="CENTER" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" onAction="#addNumber" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #333; -fx-background-color: #615a50;" styleClass="btnActive" stylesheets="@Styles/Styles.css" text="8" textFill="#fafafa" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="divide_btn" alignment="CENTER" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #333; -fx-background-color: #eb950e;" styleClass="btnActive" stylesheets="@Styles/Styles.css" text="÷" textFill="#fafafa" GridPane.columnIndex="3" />
+            <Button alignment="CENTER" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" onAction="#addNumber" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #333; -fx-background-color: #615a50;" styleClass="btnActive" stylesheets="@Styles/Styles.css" text="9" textFill="#fafafa" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="mult_btn" alignment="CENTER" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #333; -fx-background-color: #eb950e;" styleClass="btnActive" stylesheets="@Styles/Styles.css" text="*" textFill="#fafafa" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button alignment="CENTER" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" onAction="#addNumber" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #333; -fx-background-color: #615a50;" styleClass="btnActive" stylesheets="@Styles/Styles.css" text="4" textFill="#fafafa" GridPane.rowIndex="2" />
+            <Button alignment="CENTER" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" onAction="#addNumber" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #333; -fx-background-color: #615a50;" styleClass="btnActive" stylesheets="@Styles/Styles.css" text="5" textFill="#fafafa" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button alignment="CENTER" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" onAction="#addNumber" prefHeight="52.0" prefWidth="58.0" style="-fx-border-color: #333; -fx-background-color: #615a50;" styleClass="btnActive" stylesheets="@Styles/Styles.css" text="6" textFill="#fafafa" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button alignment="CENTER" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" onAction="#addNumber" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #333; -fx-background-color: #615a50;" styleClass="btnActive" stylesheets="@Styles/Styles.css" text="2" textFill="#fafafa" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button alignment="CENTER" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" onAction="#addNumber" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #333; -fx-background-color: #615a50;" styleClass="btnActive" stylesheets="@Styles/Styles.css" text="3" textFill="#fafafa" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button fx:id="plus_btn" alignment="CENTER" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #333; -fx-background-color: #eb950e;" styleClass="btnActive" stylesheets="@Styles/Styles.css" text="+" textFill="#fafafa" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button fx:id="comma_btn" alignment="CENTER" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #333; -fx-background-color: #615a50;" styleClass="btnActive" stylesheets="@Styles/Styles.css" text="," textFill="#fafafa" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button fx:id="res_btn" alignment="CENTER" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #333; -fx-background-color: #eb950e;" styleClass="btnActive" stylesheets="@Styles/Styles.css" text="=" textFill="#fafafa" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Button fx:id="clear_btn" alignment="CENTER" maxHeight="100.0" maxWidth="100.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: #333;" stylesheets="@Styles/Styles.css" text="A/C" textFill="#fafafa">
+               <styleClass>
+                  <String fx:value="btnActive" />
+                  <String fx:value="btn" />
+               </styleClass>
+            </Button>
+            <Button alignment="CENTER" maxHeight="100.0" maxWidth="118.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="118.0" style="-fx-border-color: #333; -fx-background-color: #615a50;" styleClass="btnActive" stylesheets="@Styles/Styles.css" text="0" textFill="#fafafa" GridPane.columnSpan="4" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
